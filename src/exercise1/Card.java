@@ -10,7 +10,12 @@ package exercise1;
  * @author dancye
  * @author Paul Bonenfant May 2020
  */
-// Name: Loyd Alagao
+/*
+Name: Loyd Alagao
+Introduction:
+Exercise 1 to complete a card Game in utilizing push and commit
+/*
+
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
