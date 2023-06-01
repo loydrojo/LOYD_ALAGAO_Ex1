@@ -17,11 +17,14 @@ public class CardTrick {
     public static void main(String[] args) {
         
         Card[] hand = new Card[7];
+        Random random = new Random();
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
+            card.setValue(random.nextInt(13)+1);
             //card.setValue(insert call to random number generator here)
-           
+           card.setSuit(Card.SUITS[random.nextInt(4)]);
+           hand[i] = card;
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
