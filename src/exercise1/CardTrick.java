@@ -69,24 +69,24 @@ public class CardTrick {
      * replace this information with your own.
      * @author Loyd Rojo Alafao 2023
      */
-    private static void printInfo() {
+     private static void printInfo() {
     
         System.out.println("Congratulations, you guessed right!");
         System.out.println();
         
-        System.out.println("My name is Loyd, but you can call me Rj, Rojo or Loyd");
+        System.out.println("My name is Paul, but you can call me prof, Paul or sir");
         System.out.println();
         
-        System.out.println("My career ambitions: To be come an Full Stacked Developer");
+        System.out.println("My career ambitions:");
         System.out.println("-- Be more active on LinkedIn");
         System.out.println("-- Have a semester with no violations of academic integrity!");
 	System.out.println();	
 
-        System.out.println("My hobbies: Side Java Projects");
+        System.out.println("My hobbies:");
         System.out.println("-- Investing");
         System.out.println("-- Cooking");
         System.out.println("-- Reading/Watching TV");
-        System.out.println("-- Listening to Music");
+        System.out.println("-- Riding my motorcycle");
 
         System.out.println();
         
