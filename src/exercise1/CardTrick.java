@@ -55,7 +55,11 @@ public class CardTrick {
             }
         }
         // Then loop through the cards in the array to see if there's a match.
-        
+        if (found) {
+            printInfo();
+        } else {
+            System.out.println("Sorry, your card is not in the hand.");
+        }
         // If the guess is successful, invoke the printInfo() method below.
         
     }
