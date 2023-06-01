@@ -36,6 +36,24 @@ public class CardTrick {
         //       11 for jack, 12 for queen, etc. (remember arrays are 0-based though)
         //       1 for Hearts, 2 for Diamonds, etc. (remember arrays are 0-based though)
         // 
+         Scanner scanner = new Scanner(System.in);
+        System.out.print("Pick a card value (1-13): ");
+        int value = scanner.nextInt();
+        System.out.print("Pick a card suit (0-3): ");
+        int suitIndex = scanner.nextInt();
+        Card userCard = new Card();
+        userCard.setValue(value);
+        userCard.setSuit(Card.SUITS[suitIndex]);
+
+        boolean found = false;
+        
+        // Then loop through the cards in the array to see if there's a match.
+        for (Card card : hand) {
+            if (card.getValue() == userCard.getValue() && card.getSuit().equals(userCard.getSuit())) {
+                found = true;
+                break;
+            }
+        }
         // Then loop through the cards in the array to see if there's a match.
         
         // If the guess is successful, invoke the printInfo() method below.
